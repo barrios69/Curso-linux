@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curso práctico completo de Linux desde cero. Aprende la terminal, permisos, redes, scripting y más con ejercicios interactivos y un simulador de terminal.">
+  <meta name="keywords" content="Linux, curso, terminal, bash, scripting, administración, servidores, Ubuntu">
+  <meta name="author" content="Curso Linux">
+  <title>🐧 Curso Linux — Dominio Práctico desde Cero</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐧</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Animation -->
+  <div class="bg-animation">
+    <div class="bg-orb"></div>
+    <div class="bg-orb"></div>
+    <div class="bg-orb"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-content">
+      <a href="#" class="navbar-brand" onclick="showHome(); return false;">
+        <span class="brand-icon">🐧</span>
+        <span>LinuxMaster</span>
+      </a>
+      <div class="navbar-progress" id="navProgress">
+        <div class="progress-bar-container">
+          <div class="progress-bar-fill" id="globalProgress"></div>
+        </div>
+        <span class="progress-text" id="globalProgressText">0%</span>
+      </div>
+      <button class="navbar-menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    </div>
+  </nav>
+
+  <!-- Sidebar (mobile) -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h3>📋 Módulos</h3>
+      <button class="sidebar-close" id="sidebarClose" aria-label="Cerrar menú">✕</button>
+    </div>
+    <ul class="sidebar-modules" id="sidebarModules">
+      <!-- Populated by JS -->
+    </ul>
+  </aside>
+
+  <!-- ===== HOME VIEW ===== -->
+  <main id="homeView">
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Curso Actualizado 2026
+        </div>
+        <h1>
+          Domina <span class="gradient-text">Linux</span><br>
+          desde Cero
+        </h1>
+        <p class="hero-description">
+          Un curso práctico e interactivo con simulador de terminal integrado, 
+          ejercicios reales y quizzes para que aprendas Linux de verdad, 
+          paso a paso.
+        </p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-value">8</span>
+            <span class="stat-label">Módulos</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-value">24+</span>
+            <span class="stat-label">Ejercicios</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-value">∞</span>
+            <span class="stat-label">Práctica</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Gratuito</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="#modules" class="btn btn-primary">
+            🚀 Comenzar Curso
+          </a>
+          <a href="#about" class="btn btn-secondary">
+            📖 Más información
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">¿Qué aprenderás?</span>
+          <h2 class="section-title">Un recorrido completo por el mundo Linux</h2>
+          <p class="section-subtitle">Desde la instalación hasta scripting avanzado, cada módulo incluye teoría, comandos clave, ejercicios prácticos y un terminal interactivo.</p>
+        </div>
+        <div class="modules-grid" id="modulesGrid">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section class="section" id="modules">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">Hoja de Ruta</span>
+          <h2 class="section-title">Selecciona un módulo para comenzar</h2>
+          <p class="section-subtitle">Sigue el orden recomendado o salta al tema que necesites. Tu progreso se guarda automáticamente.</p>
+        </div>
+        <div class="modules-grid" id="modulesRoadmap">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== LESSON VIEW ===== -->
+  <div class="lesson-view section" id="lessonView">
+    <div class="section-container" id="lessonContent">
+      <!-- Populated dynamically by JavaScript -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>🐧 <strong>LinuxMaster</strong> — Curso Práctico de Linux</p>
+    <p>Hecho con ❤️ para la comunidad open source · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
